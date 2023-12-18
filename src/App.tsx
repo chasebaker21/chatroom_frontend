@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.scss';
-import {ChatRoom} from "./components/ChatRoom/ChatRoom";
+import {Main} from "./components/Main/Main";
 
 function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <ChatRoom></ChatRoom>
+                <Main/>
             </header>
         </div>
     );
