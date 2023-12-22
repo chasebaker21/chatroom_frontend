@@ -1,14 +1,31 @@
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
 ul li {
   margin: 1rem;
   padding: 10px;
   border-radius: 4px;
-  background: cornflowerblue;
+}
+
+.messages-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+
+// Hiding the scrollbar for now
+.messages-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.sent-message {
+  background: blue;
+  max-width: 50%;
+  float: right;
+  clear: both;
+}
+
+.received-message {
+  background: gray;
+  max-width: 50%;
+  float: left;
+  clear: both;
 }
