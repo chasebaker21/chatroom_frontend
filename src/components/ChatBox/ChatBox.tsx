@@ -4,7 +4,7 @@ import {MessageInput} from "../../common/components/MessageInput/MessageInput";
 
 export const ChatBox = () => {
     return (<div id={'chatbox'} className="chat-box">
-        <MessagesDisplay messages={mockMessages} currentUser={'userOne'}/>
+        <MessagesDisplay messageData={mockMessages} currentUser={'userOne'}/>
         <MessageInput/>
     </div>)
 }
